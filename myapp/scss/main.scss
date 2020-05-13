@@ -93,11 +93,11 @@ b, strong {
 	margin: 0 auto;
 	@media only screen and (max-width: 1350px) and (orientation: portrait),
 	screen and (max-width: 1080px) {
-		max-width: 750px;
-		padding: 0 15px;
+		// max-width: 750px;
+		// padding: 0 15px;
 	}
 	@media screen and (max-width: 749px){
-		padding: 0 14px;
+		padding: 0 15px;
 		// max-width: 320px;
 
 	}
@@ -149,17 +149,20 @@ h2.title {
 	text-transform: uppercase;
 	font-size: 60px;
 	text-align: center;
+	@media screen and (max-width: 859px){
+		font-size: 40px;
+	}
+	@media screen and (max-width: 449px) {
+		font-size: 35px;
+	}
 }
 .subtitle {
 	font-family: "Cambria", Arial, Helvetica, sans-serif;
 	font-size: 68px;
 	line-height: 1.2;
 	text-align: center;
-	@media screen and (max-width: 880px) {
-
-	}
-	@media screen and (max-width: 579px) {
-
+	@media screen and (max-width: 449px) {
+		font-size: 42px;
 	}
 	a {
 		text-decoration: underline;

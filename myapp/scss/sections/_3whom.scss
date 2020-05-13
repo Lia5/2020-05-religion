@@ -4,11 +4,23 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 -15px;
+        @media screen and (max-width: 859px){
+            margin: 0;
+        }
     }
     &__item {
         margin: 15px;
         width: 25%;
         width: calc(100%/4 - 30px);
+
+        @media screen and (max-width: 1010px){
+            width: 33%;
+            width: calc(100%/3 - 30px);
+        }
+        @media screen and (max-width: 859px){
+            width: 100%;
+            margin: 15px 0;
+        }
         &:hover {
             .icon {
                 fill: #4f70ca;
@@ -25,7 +37,7 @@
             
         }
         .icon-people {
-            max-width: 70px;
+            max-width: 58px;
             margin-left: 11px;
         }
     }
@@ -48,13 +60,31 @@
     &__items {
         display: flex;
         margin: 0 -30px 0;
+
+        @media screen and (max-width: 1010px){
+            flex-wrap: wrap;
+            margin: 0;
+        }
     }
     &__item {
         position: relative;
         margin: 30px;
         width: 50%;
+
+        @media screen and (max-width: 1010px){
+            width: 100%;
+            margin: 0;
+            padding-bottom: 72px;
+        }
         iframe {
             max-width: 100%;
+
+            @media screen and (max-width: 1010px){
+                width: 100%;
+            }
+            @media screen and (max-width: 449px) {
+                max-height: 200px;
+            }
         }
     }
     &__title {
@@ -64,6 +94,10 @@
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, 0);
+
+        @media screen and (max-width: 1010px){
+            bottom: 0;
+        }
     }
     &__icon {
         display: inline-block;

@@ -7,9 +7,16 @@
     }
     &__body {
         display: flex;
+        @media screen and (max-width: 859px){
+            flex-wrap: wrap;
+        }
     }
     &__text {
         width: 64%;
+
+        @media screen and (max-width: 859px){
+            width: 100%;
+        }
         p {
             margin: 0 49px 20px 28px;
             line-height: 1.55;
@@ -18,6 +25,10 @@
     &__pic {
         width: 30%;
         position: relative;
+        @media screen and (max-width: 859px){
+            width: 100%;
+            height: 500px;
+        }
         &:after {
             content: "";
             position: absolute;
@@ -27,6 +38,14 @@
             height: 956px;
             background: url('../img/book.png') no-repeat;
             background-position: center;
+
+            @media screen and (max-width: 859px){
+                background-size: contain;
+                top: -19%;
+                left: -63%;
+                width: 713px;
+                height: 756px;
+            }
         }
     }
 }
