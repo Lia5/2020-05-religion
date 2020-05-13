@@ -1,0 +1,500 @@
+
+<div class="modal disabled" id="modalQuiz">
+  <div class="modal__wrap">   
+    <div class="close modal-close">
+      <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g stroke="none" stroke-width="1" fill-rule="evenodd">
+          <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+          <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+        </g>
+      </svg>
+    </div>
+    <div class="modal__body quiz">
+      <div class="quiz__discount">
+        <div class="quiz__discount-text">Ваша <br> скидка:</div>
+        <div class="quiz__discount-price">
+          <div class="quiz__discount-plus"> <span>+500 </span>руб.</div>
+          <div class="quiz__discount-total"><span id="total">0 </span>руб.</div>
+          <div class="arrows quiz__discount__arrows">
+            <svg class="arrow" width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <path d="M5 3.70904e-07L0.757355 4.24265L2.17157 5.65686L5 2.82843L7.82843 5.65686L9.24265 4.24265L5 3.70904e-07Z" fill="#615333"></path>
+              <path d="M5 4L0.757355 8.24265L2.17157 9.65686L5 6.82843L7.82843 9.65686L9.24265 8.24265L5 4Z" fill="#615333"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="quiz-sidebar">
+        <div class="quiz-sidebar__title">Ответьте за 10 простых вопросов и узнайте </div>
+        <div class="quiz-sidebar__subtitle">как мы сможем увеличить ваши продажи на первой неделе работы квиз сайта</div>
+      </div>
+      <form class="quizForm" name="quiz">
+        <!-- Hidden Required Fields-->
+        <input type="hidden" name="project_name" value="Azbuka digital"/>
+        <input type="hidden" name="admin_email" value="Nn-diamond@ya.ru, Info@azbuka.digital"/>
+        <input type="hidden" name="form_subject" value="Квиз"/>
+        <!-- END Hidden Required Fields-->
+        <input type="hidden" name="info" value="Квиз"/>
+        <input class="utm_source hidden" type="hidden" name="utm_source"/>
+        <input class="utm_medium hidden" type="hidden" name="utm_medium"/>
+        <input class="utm_campaign hidden" type="hidden" name="utm_campaign"/>
+        <input class="utm_term hidden" type="hidden" name="utm_term"/>
+        <input class="utm_content hidden" type="hidden" name="utm_content"/>
+        <div class="step-slide step-slide--active step-slide--first">
+          <div class="step-slide__title">Для начала, выберите <br> 2 подарка из 4:</div>
+          <div class="step-slide__subtitle">Можно выбрать несколько</div>
+          <div class="quiz__ans question__ans--checkbox">
+            <label class="pick-item">
+              <div class="label-img"><img src="img/qa1-1.png" alt="quiz"/></div>
+              <input class="pick-item__input" type="checkbox" name="question1-1" value="Скидка 500 рублей на рекламу в соцсетях"/>
+              <div class="pick-item__label"> <span>Скидка </span><br/><span>500 рублей </span><br/>на рекламу <br/>в соцсетях</div>
+            </label>
+            <label class="pick-item">
+              <div class="label-img"><img src="img/qa1-2.png" alt="quiz"/></div>
+              <input class="pick-item__input" type="checkbox" name="question1-2" value="Аудит спросана ваш продукт в интернете"/>
+              <div class="pick-item__label"> <span>Аудит спроса</span><br/>на ваш продукт<br/>в интернете</div>
+            </label>
+            <label class="pick-item">
+              <div class="label-img"><img src="img/qa1-3.png" alt="quiz"/></div>
+              <input class="pick-item__input" type="checkbox" name="question1-3" value="Чек-лист для настройки Яндекс Директ"/>
+              <div class="pick-item__label"> <span>Чек-лист </span><br/>для настройки<br/>Яндекс Директ</div>
+            </label>
+            <label class="pick-item">
+              <div class="label-img"><img src="img/qa1-4.png" alt="quiz"/></div>
+              <input class="pick-item__input" type="checkbox" name="question1-4" value="Чек-лист для оформления Вконтакте"/>
+              <div class="pick-item__label"> <span>Чек-лист</span><br/>для оформления<br/>Вконтакте</div>
+            </label>
+          </div>
+          <div class="step-slide__bottom">
+            <div class="quiz-progress">
+              <div class="quiz-progress__title">Готово:<span>0%</span></div>
+              <div class="quiz-progress__steps">
+                <div class="quiz-progress__item active" style="width:0%"></div>
+              </div>
+            </div>
+            <div class="prev-next-container">
+              <div class="quiz__error"></div>
+              <div class="si-button-pulse"><a class="btn btn-next qa-next blick" href="#">Далее
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                    <path style="fill:#fff;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111                                        C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587                                        c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="step-slide">
+          <div class="step-slide__title">Какая у Вас сфера деятельности?</div>
+          <div class="quiz__ans question__ans--radio">
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question2" value="Услуги"/>
+              <div class="pick-item__label">Услуги</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question2" value="Оптовые продажи "/>
+              <div class="pick-item__label">Оптовые продажи</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question2" value="Розничные продажи"/>
+              <div class="pick-item__label">Розничные продажи</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question2" value="Недвижимость"/>
+              <div class="pick-item__label">Недвижимость</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question2" value="Строительство"/>
+              <div class="pick-item__label">Строительство</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question2" value="Товарный бизнес"/>
+              <div class="pick-item__label">Товарный бизнес</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question2" value="Ресторанный бизнес"/>
+              <div class="pick-item__label">Ресторанный бизнес</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question2" value="другое"/>
+              <div class="pick-item__label">другое</div>
+            </label>
+          </div>
+          <div class="step-slide__bottom">
+            <div class="quiz-progress">
+              <div class="quiz-progress__title">Готово:<span>10%</span></div>
+              <div class="quiz-progress__steps">
+                <div class="quiz-progress__item active" style="width:10%"></div>
+              </div>
+            </div>
+            <div class="prev-next-container">
+              <div class="quiz__error"></div><a class="btn btn-prev qa-prev" href="#"></a>
+              <div class="si-button-pulse"><a class="btn btn-next qa-next blick" href="#">Далее
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                    <path style="fill:#fff;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111                                        C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587                                        c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="step-slide">
+          <div class="step-slide__title">Какой Ваш текущий статус?</div>
+          <div class="quiz__ans question__ans--radio">
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question3" value="Уже имею бизнес"/>
+              <div class="pick-item__label">Уже имею бизнес</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question3" value="Начинающий предприниматель"/>
+              <div class="pick-item__label">Начинающий предприниматель</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question3" value="Хочу начать свой бизнес"/>
+              <div class="pick-item__label">Хочу начать свой бизнес</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question3" value="Работаю в компании"/>
+              <div class="pick-item__label">Работаю в компании</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question3" value="Маркетолог"/>
+              <div class="pick-item__label">Маркетолог</div>
+            </label>
+          </div>
+          <div class="step-slide__bottom">
+            <div class="quiz-progress">
+              <div class="quiz-progress__title">Готово:<span>20%</span></div>
+              <div class="quiz-progress__steps">
+                <div class="quiz-progress__item active" style="width:20%"></div>
+              </div>
+            </div>
+            <div class="prev-next-container">
+              <div class="quiz__error"></div><a class="btn btn-prev qa-prev" href="#"> </a>
+              <div class="si-button-pulse"><a class="btn btn-next qa-next blick" href="#">Далее
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                    <path style="fill:#fff;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111                                        C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587                                        c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="step-slide">
+          <div class="step-slide__title">Какой бюджет на рекламу <br> Вы сможете выделить?</div>
+          <div class="quiz__ans question__ans--radio">
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question4" value="от 20 000 до 50 000 рублей"/>
+              <div class="pick-item__label">от 20 000 до 50 000 рублей</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question4" value="от 50 000 рублей 100 000 рублей"/>
+              <div class="pick-item__label">от 50 000 рублей 100 000 рублей</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question4" value="От 100 000 до 200 000 рублей"/>
+              <div class="pick-item__label">От 100 000 до 200 000 рублей</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question4" value="Больше 200 000 рублей"/>
+              <div class="pick-item__label">Больше 200 000 рублей</div>
+            </label>
+          </div>
+          <div class="step-slide__bottom">
+            <div class="quiz-progress">
+              <div class="quiz-progress__title">Готово:<span>30%</span></div>
+              <div class="quiz-progress__steps">
+                <div class="quiz-progress__item active" style="width:30%"></div>
+              </div>
+            </div>
+            <div class="prev-next-container">
+              <div class="quiz__error"></div><a class="btn btn-prev qa-prev" href="#"> </a>
+              <div class="si-button-pulse"><a class="btn btn-next qa-next blick" href="#">Далее
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                    <path style="fill:#fff;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111                                        C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587                                        c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="step-slide step-slide--text">
+          <div class="step-slide__title">На какой регион, область <br> или город работаете?</div>
+          <div class="quiz__ans quiz__ans--text">
+            <label class="pick-item pick-item--text">
+              <input type="text" name="question5" placeholder="Например: москва"/>
+            </label>
+          </div>
+          <div class="step-slide__bottom">
+            <div class="quiz-progress">
+              <div class="quiz-progress__title">Готово:<span>40%</span></div>
+              <div class="quiz-progress__steps">
+                <div class="quiz-progress__item active" style="width:40%"></div>
+              </div>
+            </div>
+            <div class="prev-next-container">
+              <div class="quiz__error"></div><a class="btn btn-prev qa-prev" href="#"></a>
+              <div class="si-button-pulse"><a class="btn btn-next qa-next blick" href="#">Далее
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                    <path style="fill:#fff;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111                                        C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587                                        c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="step-slide">
+          <div class="step-slide__title">Есть ли у Вас действующий сайт?</div>
+          <div class="quiz__ans question__ans--radio">
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question6" value="Да"/>
+              <div class="pick-item__label">Да</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question6" value="Нет"/>
+              <div class="pick-item__label">Нет</div>
+            </label>
+          </div>
+          <div class="step-slide__bottom">
+            <div class="quiz-progress">
+              <div class="quiz-progress__title">Готово:<span>50%</span></div>
+              <div class="quiz-progress__steps">
+                <div class="quiz-progress__item active" style="width:50%"></div>
+              </div>
+            </div>
+            <div class="prev-next-container">
+              <div class="quiz__error"></div><a class="btn btn-prev qa-prev" href="#"></a>
+              <div class="si-button-pulse"><a class="btn btn-next qa-next blick" href="#">Далее
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                    <path style="fill:#fff;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111                                        C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587                                        c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="step-slide">
+          <div class="step-slide__title">Идёт ли у Вас реклама на сайт?</div>
+          <div class="quiz__ans question__ans--checkbox">
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question7-1" value="Рекламы нет"/>
+              <div class="pick-item__label">Рекламы нет</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question7-2" value="Контекстная реклама  (Яндекс/Google)"/>
+              <div class="pick-item__label">Контекстная реклама <br> (Яндекс/Google)</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question7-3" value="SEO"/>
+              <div class="pick-item__label">SEO</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question7-4" value="Реклама через  социальные сети"/>
+              <div class="pick-item__label">Реклама через <br> социальные сети</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question7-5" value="Заходят на сайт через  наружную рекламу"/>
+              <div class="pick-item__label">Заходят на сайт через <br> наружную рекламу</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question7-6" value="Как то заходят,  не знаю откуда"/>
+              <div class="pick-item__label">Как то заходят, <br> не знаю откуда</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question7-7" value="Затрудняюсь ответить"/>
+              <div class="pick-item__label">Затрудняюсь ответить</div>
+            </label>
+          </div>
+          <div class="step-slide__bottom">
+            <div class="quiz-progress">
+              <div class="quiz-progress__title">Готово:<span>60%</span></div>
+              <div class="quiz-progress__steps">
+                <div class="quiz-progress__item active" style="width:60%"></div>
+              </div>
+            </div>
+            <div class="prev-next-container">
+              <div class="quiz__error"></div><a class="btn btn-prev qa-prev" href="#"></a>
+              <div class="si-button-pulse"><a class="btn btn-next qa-next blick" href="#">Далее
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                    <path style="fill:#fff;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111                                        C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587                                        c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="step-slide">
+          <div class="step-slide__title">Для чего Вы к нам обратились?</div>
+          <div class="quiz__ans question__ans--radio">
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question8" value="Нужно больше заявок"/>
+              <div class="pick-item__label">Нужно больше заявок</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question8" value="Хочу внедрить/улучшить  интернет-маркетинг в компании"/>
+              <div class="pick-item__label">Хочу внедрить/улучшить  интернет-маркетинг в компании</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question8" value="Необходимо протестировать  нишу"/>
+              <div class="pick-item__label">Необходимо протестировать  нишу</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question8" value="Нужна консультация эксперта "/>
+              <div class="pick-item__label">Нужна консультация эксперта </div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question8" value="другое"/>
+              <div class="pick-item__label">другое</div>
+            </label>
+          </div>
+          <div class="step-slide__bottom">
+            <div class="quiz-progress">
+              <div class="quiz-progress__title">Готово:<span>70%</span></div>
+              <div class="quiz-progress__steps">
+                <div class="quiz-progress__item active" style="width:70%"></div>
+              </div>
+            </div>
+            <div class="prev-next-container">
+              <div class="quiz__error"></div><a class="btn btn-prev qa-prev" href="#"> </a>
+              <div class="si-button-pulse"><a class="btn btn-next qa-next blick" href="#">Далее
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                    <path style="fill:#fff;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111                                        C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587                                        c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="step-slide">
+          <div class="step-slide__title">Как срочно Вы готовы запустить <br> проект и получать заявки?</div>
+          <div class="quiz__ans question__ans--radio">
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question9" value="Готов заключить с Вами договор  сегодня, если договоримся"/>
+              <div class="pick-item__label">Готов заключить с Вами договор <br> сегодня, если договоримся</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question9" value="Никуда не тороплюсь,  рассматриваю разные варианты"/>
+              <div class="pick-item__label">Никуда не тороплюсь, <br> рассматриваю разные варианты</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question9" value="Хотелось бы запустить проект  как можно быстрее"/>
+              <div class="pick-item__label">Хотелось бы запустить проект <br> как можно быстрее</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question9" value="Необходимо протестировать нишу"/>
+              <div class="pick-item__label">Необходимо протестировать нишу</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="radio" name="question9" value="Пока выбираю каналы продаж  и сравниваю подрядчиков"/>
+              <div class="pick-item__label">Пока выбираю каналы продаж <br> и сравниваю подрядчиков</div>
+            </label>
+          </div>
+          <div class="step-slide__bottom">
+            <div class="quiz-progress">
+              <div class="quiz-progress__title">Готово:<span>80%</span></div>
+              <div class="quiz-progress__steps">
+                <div class="quiz-progress__item active" style="width:80%"></div>
+              </div>
+            </div>
+            <div class="prev-next-container">
+              <div class="quiz__error"></div><a class="btn btn-prev qa-prev" href="#"></a>
+              <div class="si-button-pulse"><a class="btn btn-next qa-next blick" href="#">Далее
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                    <path style="fill:#fff;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111                                        C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587                                        c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="step-slide">
+          <div class="step-slide__title">Вас интересует что-то, кроме <br> разработки сайта?</div>
+          <div class="quiz__ans question__ans--checkbox">
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question10-1" value="нет"/>
+              <div class="pick-item__label">нет</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question10-2" value="Маркетинговая проработка  проекта"/>
+              <div class="pick-item__label">Маркетинговая проработка <br> проекта</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question10-3" value="Фирменный стиль и упаковка"/>
+              <div class="pick-item__label">Фирменный стиль и упаковка</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question10-4" value="Конверсионный чат-бот"/>
+              <div class="pick-item__label">Конверсионный чат-бот</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question10-5" value="Внедрение CRM системы"/>
+              <div class="pick-item__label">Внедрение CRM системы</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question10-6" value="Контекстная реклама  (Яндекс + Google)"/>
+              <div class="pick-item__label">Контекстная реклама <br> (Яндекс + Google)</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question10-7" value="Интересует весь спектр  интернет-маркетинга"/>
+              <div class="pick-item__label">Интересует весь спектр <br> интернет-маркетинга</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question10-8" value="Построение отдела продаж"/>
+              <div class="pick-item__label">Построение отдела продаж</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question10-9" value="Реклама в социальных сетях"/>
+              <div class="pick-item__label">Реклама в социальных сетях</div>
+            </label>
+            <label class="pick-item">
+              <input class="pick-item__input" type="checkbox" name="question10-10" value="Затрудняюсь ответить"/>
+              <div class="pick-item__label">Затрудняюсь ответить</div>
+            </label>
+          </div>
+          <div class="step-slide__bottom">
+            <div class="quiz-progress">
+              <div class="quiz-progress__title">Готово:<span>90%</span></div>
+              <div class="quiz-progress__steps">
+                <div class="quiz-progress__item active" style="width:90%"></div>
+              </div>
+            </div>
+            <div class="prev-next-container">
+              <div class="quiz__error"></div><a class="btn btn-prev qa-prev" href="#"></a>
+              <div class="si-button-pulse"><a class="btn btn-next qa-next qa-del-discount blick" href="#">Далее
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                    <path style="fill:#fff;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111                                        C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587                                        c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="step-slide step-slide--finish">
+          <div class="modal__title">
+            До рассчёта эффективности <br>и получения 6 бонусов <span>Вас отделяет всего 1 шаг</span></div>
+          <div class="modal__subtitle">Наши маркетологи уже изучают Ваши ответы, чтобы проанализировать <br> эффективность сайта-квиза в Вашем бизнесе. <span>Осталось корректно заполнить форму, чтобы получить всю информацию </span></div>
+          <div class="finish__body">
+            <div class="finish-sidebar">
+              <div class="finish-sidebar__item">
+                <div class="finish-sidebar__icon"><img src="img/icons/tick.png" alt="tick"/></div>
+                <div class="finish-sidebar__name"> <span>чек-<span class="br-mobile"><br></span>лист</span><span class="br-desktop br-planshet"><br></span>для директ</div>
+              </div>
+              <div class="finish-sidebar__item">
+                <div class="finish-sidebar__icon"><img src="img/icons/loupe.png" alt="loupe"/></div>
+                <div class="finish-sidebar__name"> <span>Аудит </span>вашего<br/>продукта</div>
+              </div>
+              <div class="finish-sidebar__item">
+                <div class="finish-sidebar__icon"><img src="img/icons/computer.png" alt="computer"/></div>
+                <div class="finish-sidebar__name"> <span>Аудит </span><br/>вашего сайта</div>
+              </div>
+              <div class="finish-sidebar__item">
+                <div class="finish-sidebar__icon finish-sidebar__icon--work"><img src="img/icons/work.png" alt="work"/></div>
+                <div class="finish-sidebar__name"> <span>Кейсы по </span><br/>вашей нише</div>
+              </div>
+            </div>
+            <div class="finish-form">
+              <div class="form-line">
+                <label>
+                  <input class="rfield phone-mask" type="text" placeholder="ваш номер телефона" name="phone"/>
+                </label>
+              </div>
+              <div class="form-line">
+                <label>
+                  <input class="rfield" type="email" placeholder="введите вашу почту" name="email"/>
+                </label>
+              </div>
+              <div class="form-line-btn">
+                <div class="btn btn-finish si-button-pulse" data-modal="#modalFinish">
+                  <div class="blick">
+                    <input class="quiz__btn" type="submit" value="Получить расчет и бонусы"/>
+                  </div>
+                </div>
+              </div>
+              <div class="agree"><img src="img/agree.png" alt="agree"/>
+                <div class="agree__text">Нажимая кнопку «оставить заявку», вы даете согласие на обработку персональных данных и соглашаетесь <a class="agree__policy" href="policy.html" target="_blank">с политикой конфиденциальности</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

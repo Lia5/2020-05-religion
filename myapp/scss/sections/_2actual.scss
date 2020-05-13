@@ -1,0 +1,32 @@
+.actual{
+    overflow: hidden;
+    padding-top: 100px;
+    .title {
+        text-align: left;
+        margin-bottom: 28px;
+    }
+    &__body {
+        display: flex;
+    }
+    &__text {
+        width: 64%;
+        p {
+            margin: 0 49px 20px 28px;
+            line-height: 1.55;
+        }
+    }
+    &__pic {
+        width: 30%;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: -19%;
+            left: -123%;
+            width: 1213px;
+            height: 956px;
+            background: url('../img/book.png') no-repeat;
+            background-position: center;
+        }
+    }
+}

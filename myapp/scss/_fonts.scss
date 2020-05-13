@@ -1,0 +1,5 @@
+@import "_mixins/font-face";
+
+@include font-face("Cambria", "../fonts/Cambria/Cambria", 400);
+@include font-face("ProximaNova", "../fonts/ProximaNova-Regular/ProximaNova-Regular", 400);
+@include font-face("ProximaNova", "../fonts/ProximaNova-Bold/ProximaNova-Bold", 700);

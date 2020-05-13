@@ -1,0 +1,81 @@
+.whom {
+    padding: 122px 0 100px;
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    &__item {
+        margin: 15px;
+        width: 25%;
+        width: calc(100%/4 - 30px);
+        &:hover {
+            .icon {
+                fill: #4f70ca;
+            }
+        }
+    }
+    &__icon {
+        position: relative;
+        max-width: 73px;
+        .icon {
+            max-width: 108px;
+            width: 100%;
+            height: 121px;
+            
+        }
+        .icon-people {
+            max-width: 70px;
+            margin-left: 11px;
+        }
+    }
+    &__text {
+        margin-left: 45px;
+        font-size: 21px;
+        line-height: 1.2;
+    }
+    &__num {
+        position: absolute;
+        bottom: 20px;
+        right: -24px;
+        font-size: 23px;
+        color: #4f70ca;
+        font-weight: 700;
+    }
+}
+.video {
+    margin-top: 50px;
+    &__items {
+        display: flex;
+        margin: 0 -30px 0;
+    }
+    &__item {
+        position: relative;
+        margin: 30px;
+        width: 50%;
+        iframe {
+            max-width: 100%;
+        }
+    }
+    &__title {
+        position: absolute;
+        text-align: center;
+        bottom: -5px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0);
+    }
+    &__icon {
+        display: inline-block;
+        margin: 0 auto 10px;
+        background: #fff;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    
+    }
+}

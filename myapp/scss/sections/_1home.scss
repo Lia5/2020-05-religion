@@ -1,0 +1,32 @@
+.home {
+    margin-top: 61px;
+    .title {
+        font-size: 68px;
+        line-height: 1;
+        margin-bottom: -12px;
+        letter-spacing: 6px;
+    }
+    @media screen and (max-width: 1919px) {
+
+    }
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+
+    }
+    @media screen and (max-width: 749px){
+       
+    }
+    &__text {
+    	font-family: "Cambria", Arial, Helvetica, sans-serif;
+        color: #656565;
+        font-size: 42px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .icon {
+        margin: 0 10px 0 0;
+        width: 24px;
+        height: 24px;
+    }
+}
